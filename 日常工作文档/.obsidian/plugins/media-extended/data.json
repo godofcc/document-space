@@ -1,0 +1,6 @@
+{
+  "__VERSION__": 2,
+  "release.previous-version": "4.2.3",
+  "playback.track.default-enabled": true,
+  "link.hosted-prefer": "browser"
+}
