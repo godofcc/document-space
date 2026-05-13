@@ -2,5 +2,8 @@
   "media-extended",
   "templater-obsidian",
   "dataview",
-  "obsidian-git"
+  "obsidian-git",
+  "karpathywiki",
+  "obsidian-local-rest-api",
+  "realclaudian"
 ]

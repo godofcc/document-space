@@ -1,0 +1,33 @@
+{
+  "provider": "glm",
+  "apiKey": "6dfa7258ca074565b6b2957910201061.YozjAvL3VmOzJEkq",
+  "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+  "model": "glm-4.7",
+  "wikiFolder": "wiki",
+  "language": "zh",
+  "wikiLanguage": "zh",
+  "useCustomWikiLanguage": false,
+  "availableModels": [
+    "glm-4.5",
+    "glm-4.5-air",
+    "glm-4.6",
+    "glm-4.7",
+    "glm-5",
+    "glm-5-turbo",
+    "glm-5.1"
+  ],
+  "useCustomModel": false,
+  "maxConversationHistory": 30,
+  "queryHistory": [],
+  "enableSchema": true,
+  "extractionGranularity": "standard",
+  "autoWatchSources": false,
+  "autoWatchMode": "notify",
+  "autoWatchDebounceMs": 5000,
+  "watchedFolders": [],
+  "periodicLint": "off",
+  "startupCheck": false,
+  "pageGenerationConcurrency": 1,
+  "batchDelayMs": 300,
+  "lastOfferedQueryHash": ""
+}

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778684579734-jtzb6iz0q",
+  "providerId": "opencode",
+  "title": "Identify current model",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778684579735,
+  "updatedAt": 1778685425399,
+  "lastResponseAt": 1778685425399,
+  "sessionId": "ses_1de232c0affeNOdRXlsNot66tz",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "currentNote": "日常学习/架构设计/cli-tool-architecture-design.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 31477,
+    "contextTokens": 31486,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 9,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 15
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778684441921-fsdp8cblo",
+  "providerId": "opencode",
+  "title": "Greet user",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778684441921,
+  "updatedAt": 1778684567539,
+  "lastResponseAt": 1778684553748,
+  "sessionId": "ses_1de2545b1ffehwXP75qP4vOn6j",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "currentNote": "日常学习/架构设计/cli-tool-architecture-design.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 17436,
+    "contextTokens": 17445,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 9,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 9
+  }
+}
