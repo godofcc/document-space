@@ -1,0 +1,23 @@
+{
+  "id": "conv-1779115854487-xvatocvjb",
+  "providerId": "opencode",
+  "title": "Ingest data",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779115854487,
+  "updatedAt": 1779116225945,
+  "lastResponseAt": 1779116225945,
+  "sessionId": "ses_1c46e710fffefwj33FSRWLaB1v",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 39936,
+    "contextTokens": 40707,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 771,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 20
+  }
+}

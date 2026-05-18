@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778770051522-7bi0802x3",
+  "providerId": "opencode",
+  "title": "Ingest documents",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778770051523,
+  "updatedAt": 1778770238904,
+  "lastResponseAt": 1778770238904,
+  "sessionId": "ses_1d90af7c3ffe8LRlFSwNEcgMbF",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "currentNote": "Clippings/Bilibili/2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 39808,
+    "contextTokens": 40211,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 403,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 20
+  }
+}

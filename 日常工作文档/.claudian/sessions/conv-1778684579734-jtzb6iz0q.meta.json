@@ -4,8 +4,8 @@
   "title": "Identify current model",
   "titleGenerationStatus": "success",
   "createdAt": 1778684579735,
-  "updatedAt": 1778685425399,
-  "lastResponseAt": 1778685425399,
+  "updatedAt": 1778770010140,
+  "lastResponseAt": 1778770010140,
   "sessionId": "ses_1de232c0affeNOdRXlsNot66tz",
   "providerState": {
     "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
@@ -13,12 +13,12 @@
   "currentNote": "日常学习/架构设计/cli-tool-architecture-design.md",
   "usage": {
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 31477,
-    "contextTokens": 31486,
+    "cacheReadInputTokens": 33536,
+    "contextTokens": 34096,
     "contextWindow": 204800,
     "contextWindowIsAuthoritative": true,
-    "inputTokens": 9,
+    "inputTokens": 560,
     "model": "opencode:zhipuai/glm-4.7",
-    "percentage": 15
+    "percentage": 17
   }
 }
