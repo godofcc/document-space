@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google I/O 2026 - 深度解读</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ===================================
+       Design System
+       =================================== */
+    :root {
+      /* Color Palette */
+      --google-blue: #4285f4;
+      --google-red: #ea4335;
+      --google-yellow: #fbbc04;
+      --google-green: #34a853;
+      --google-purple: #9c27b0;
+
+      --primary: oklch(0.55 0.25 250);
+      --primary-light: oklch(0.75 0.15 250);
+      --primary-dark: oklch(0.35 0.2 250);
+
+      /* Neutrals */
+      --gray-50: oklch(0.98 0.002 250);
+      --gray-100: oklch(0.96 0.004 250);
+      --gray-200: oklch(0.92 0.006 250);
+      --gray-300: oklch(0.87 0.008 250);
+      --gray-400: oklch(0.71 0.01 250);
+      --gray-500: oklch(0.55 0.014 250);
+      --gray-600: oklch(0.45 0.014 250);
+      --gray-700: oklch(0.37 0.014 250);
+      --gray-800: oklch(0.27 0.014 250);
+      --gray-900: oklch(0.21 0.014 250);
+
+      /* Light theme */
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-card: #ffffff;
+      --border-color: #e9ecef;
+      --text-primary: #212529;
+      --text-secondary: #6c757d;
+      --text-muted: #adb5bd;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0a0a0b;
+      --bg-secondary: #18181b;
+      --bg-card: #202024;
+      --border-color: #27272a;
+      --text-primary: #fafafa;
+      --text-secondary: #a1a1aa;
+      --text-muted: #52525b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      transition: background 0.3s ease;
+    }
+
+    /* Stage Container */
+    .stage {
+      width: 1920px;
+      height: 1080px;
+      position: relative;
+      transform-origin: center center;
+      background: var(--bg-primary);
+      transition: background 0.3s ease;
+    }
+
+    /* Slides */
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      padding: 80px;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Typography */
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 32px;
+      color: var(--text-primary);
+    }
+
+    h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    /* Layout Utilities */
+    .slide-header {
+      margin-bottom: 48px;
+    }
+
+    .slide-content {
+      flex: 1;
+      display: flex;
+      gap: 48px;
+    }
+
+    .content-left {
+      flex: 1;
+    }
+
+    .content-right {
+      flex: 1;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+
+    /* Google Colors Badge */
+    .google-badge {
+      display: inline-flex;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 50px;
+      background: var(--bg-secondary);
+      margin-bottom: 24px;
+    }
+
+    .google-badge span {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
+    .google-badge .blue { background: var(--google-blue); }
+    .google-badge .red { background: var(--google-red); }
+    .google-badge .yellow { background: var(--google-yellow); }
+    .google-badge .green { background: var(--google-green); }
+
+    /* Feature List */
+    .feature-list {
+      list-style: none;
+    }
+
+    .feature-list li {
+      font-size: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      color: var(--text-secondary);
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      color: var(--google-green);
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--bg-secondary) 100%);
+      border-left: 6px solid var(--primary);
+      padding: 32px;
+      border-radius: 0 12px 12px 0;
+      margin: 32px 0;
+    }
+
+    .highlight-box h3 {
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .highlight-box p {
+      color: var(--text-primary);
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .stat-card {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 64px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 20px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Controls */
+    .controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .controls button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .controls button:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .slide-counter {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Tweaks Panel */
+    .tweaks-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 80px;
+      z-index: 1001;
+      padding: 10px 16px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .tweaks-panel {
+      position: fixed;
+      bottom: 70px;
+      right: 20px;
+      width: 300px;
+      background: rgba(24, 24, 27, 0.95);
+      backdrop-filter: blur(12px);
+      border-radius: 12px;
+      padding: 20px;
+      color: white;
+      font-size: 13px;
+      z-index: 9999;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: none;
+    }
+
+    .tweaks-panel.visible {
+      display: block;
+    }
+
+    .tweaks-panel h4 {
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .tweaks-panel .tweak-item {
+      margin-bottom: 16px;
+    }
+
+    .tweaks-panel label {
+      display: block;
+      margin-bottom: 8px;
+      opacity: 0.7;
+    }
+
+    .tweaks-panel input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+
+    .tweaks-panel input[type="range"] {
+      width: 100%;
+    }
+
+    /* Navigation dots */
+    .nav-dots {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      gap: 8px;
+      z-index: 1000;
+    }
+
+    .nav-dots .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .nav-dots .dot.active {
+      background: white;
+      width: 30px;
+      border-radius: 5px;
+    }
+
+    /* Responsive scaling */
+    @media (max-width: 768px) {
+      h1 { font-size: 48px; }
+      h2 { font-size: 36px; }
+      h3 { font-size: 28px; }
+      p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Stage Container -->
+  <div class="stage">
+    <!-- Slide 1: Title -->
+    <section class="slide active" data-screen-label="01 封面">
+      <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+        <div class="google-badge">
+          <span class="blue"></span>
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <h1 style="background: linear-gradient(135deg, #4285f4 0%, #9c27b0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+          Google I/O 2026
+        </h1>
+        <h2 style="font-size: 48px; color: var(--text-secondary);">AI 从答案机器到执行系统的转折点</h2>
+        <div class="highlight-box" style="margin-top: 48px;">
+          <p>"这次谷歌终于把 AI 从陪你聊两句，望替你跑完整条链路"</p>
+        </div>
+        <p style="margin-top: 32px; color: var(--text-muted);">讲解材料 · 杜雨说AI 视频整理</p>
+      </div>
+    </section>
+
+    <!-- Slide 2: 核心变化 -->
+    <section class="slide" data-screen-label="02 核心变化">
+      <div class="slide-header">
+        <h2>一个关键词：Agent（智能体）</h2>
+      </div>
+      <div class="slide-content">
+        <div class="content-left">
+          <div class="card">
+            <h3>🤖 从助手到智能体</h3>
+            <ul class="feature-list">
+              <li><strong>以前：</strong>回答问题、提供信息</li>
+              <li><strong>现在：</strong>执行任务、多步推理</li>
+              <li><strong>未来：</strong>自主决策、24/7工作</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>📊 三大战役</h3>
+            <ul class="feature-list">
+              <li>算力战：2026年资本开支1800-1900亿美元</li>
+              <li>分发战：抢占高频入口（搜索、邮箱、浏览器）</li>
+              <li>产品战：一个大脑，多个手脚</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="highlight-box">
+            <h3>💡 核心洞察</h3>
+            <p>AI 竞争已经不仅是"谁更聪明"，而是"谁能真正进你的邮箱、文档、日历、浏览器、支付和购物链路"</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">9亿+</div>
+              <div class="stat-label">Gemini 月活用户</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">4×</div>
+              <div class="stat-label">输出速度提升</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: 模型升级 -->
+    <section class="slide" data-screen-label="03 模型升级">
+      <div class="slide-header">
+        <h2>新模型：Gemini 3.5 系列</h2>
+      </div>
+      <div class="slide-content">
+        <div class="content-left">
+          <div class="card" style="border-left: 6px solid var(--google-blue);">
+            <h3>⚡ Gemini 3.5 Flash</h3>
+            <ul class="feature-list">
+              <li>比 3.1 Pro 更强（整体性能）</li>
+              <li>输出速度是其他前沿模型的 4 倍</li>
+              <li>支持长任务、Agent 执行</li>
+              <li>强化 agentic coding 能力</li>
+            </ul>
+          </div>
+          <div class="card" style="border-left: 6px solid var(--google-purple);">
+            <h3>🎬 Gemini Omni</h3>
+            <ul class="feature-list">
+              <li>世界模型：模拟物理环境</li>
+              <li>文本/图片/视频 → 高质量视频生成</li>
+              <li>精细编辑：换背景、加角色</li>
+              <li>保持动作和声音一致性</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="card">
+            <h3>📅 发布时间表</h3>
+            <ul class="feature-list">
+              <li><strong>3.5 Flash：</strong>现在可用（默认搜索模型）</li>
+              <li><strong>3.5 Pro：</strong>下个月发布</li>
+              <li><strong>Omni：</strong>集成到 Flash、App、Flow、YouTube Shorts</li>
+            </ul>
+          </div>
+          <div class="highlight-box">
+            <h3>🚀 技术突破</h3>
+            <p>不再需要"速度 vs 质量"的权衡 — Gemini 3.5 同时实现了前沿智能和闪电速度</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: 搜索革命 -->
+    <section class="slide" data-screen-label="04 搜索革命">
+      <div class="slide-header">
+        <h2>搜索：从链接到结果页</h2>
+      </div>
+      <div class="slide-content">
+        <div class="content-left">
+          <div class="card">
+            <h3>🔍 AI Search 升级</h3>
+            <ul class="feature-list">
+              <li>默认模型升级为 Gemini 3.5 Flash</li>
+              <li>支持文本、图片、文件、视频、Chrome标签页混合输入</li>
+              <li>自动生成交互界面：图表、模拟器、Dashboard</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>⏰ Information Agents</h3>
+            <ul class="feature-list">
+              <li>24/7 后台持续监控全网</li>
+              <li>找房子、盯球鞋、跟踪股票、看促销</li>
+              <li>先向 Google AI Pro/Ultra 订阅用户开放</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="highlight-box">
+            <h3>🎯 行业冲击</h3>
+            <p>搜索引擎、助手、轻应用、电商的边界开始"糊成一锅"</p>
+          </div>
+          <div class="card">
+            <h3>🌐 生成式 UI</h3>
+            <ul class="feature-list">
+              <li>根据你的问题动态构建界面</li>
+              <li>实时生成图表和可视化</li>
+              <li>免费向所有用户开放（今年夏天）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: 产品矩阵 -->
+    <section class="slide" data-screen-label="05 产品矩阵">
+      <div class="slide-header">
+        <h2>产品矩阵：一个大脑，多个手脚</h2>
+      </div>
+      <div class="slide-content">
+        <div class="content-left">
+          <div class="card">
+            <h3>📱 Gemini App</h3>
+            <ul class="feature-list">
+              <li><strong>Daily Brief：</strong>早上自动读邮箱、日历、任务，排优先级</li>
+              <li><strong>Gemini Spark：</strong>24/7 在线个人Agent，云端持续工作</li>
+              <li>深度集成 Workspace（Gmail、Docs、Slides 等）</li>
+              <li>macOS 应用：本地文件处理 + 强大语音功能</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🛒 Universal Cart</h3>
+            <ul class="feature-list">
+              <li>跨 Search、Gemini、YouTube、Gmail 购物车</li>
+              <li>盯降价、看价格历史、查库存</li>
+              <li>提醒兼容性，Google Pay 结账</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="card">
+            <h3>👓 智能眼镜</h3>
+            <ul class="feature-list">
+              <li>两条产品线：音频眼镜（先）→ 显示型眼镜（后）</li>
+              <li>合作方：三星、Gentle Monster、Oakley</li>
+              <li>导航、发短信、拍照、实时翻译、语音点咖啡</li>
+              <li>手机可一直放口袋里</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🎨 创作者工具</h3>
+            <ul class="feature-list">
+              <li>Google Pics：作图、改图、改文字、翻译海报</li>
+              <li>Flow + Flow Music 升级</li>
+              <li>Workspace 语音整理：开口就能写文档、找邮件、记笔记</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 6: 总结与启示 -->
+    <section class="slide" data-screen-label="06 总结启示">
+      <div class="slide-header">
+        <h2>总结：AI 的范式转移</h2>
+      </div>
+      <div class="slide-content">
+        <div class="content-left">
+          <div class="highlight-box">
+            <h3>🎯 核心变化</h3>
+            <p>AI 正在从"答案机器"变成"执行系统"</p>
+          </div>
+          <div class="card">
+            <h3>📊 四大资产入口</h3>
+            <ul class="feature-list">
+              <li><strong>入口：</strong>搜索、邮箱、浏览器、支付</li>
+              <li><strong>交易：</strong>电商、购物链路</li>
+              <li><strong>支付：</strong>Google Pay、结算</li>
+              <li><strong>数据：</strong>用户行为、偏好、历史</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="card">
+            <h3>💡 对普通人的启示</h3>
+            <ul class="feature-list">
+              <li><strong>别迷信模型榜单：</strong>真正值钱的是谁能把 AI 塞进高频入口和工作流</li>
+              <li><strong>Agent 今年真落地：</strong>但短期内别神话，美国优先、订阅优先</li>
+              <li><strong>国内团队该学的：</strong>不是再做聊天框，而是把 AI 嵌进真实链路</li>
+              <li><strong>核心竞争力：</strong>会不会提需求、会不会拆任务、会不会用 AI 接管重复劳动</li>
+            </ul>
+          </div>
+          <div class="card" style="background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); border: none;">
+            <h3 style="color: white;">🚀 下一步</h3>
+            <p style="color: white; font-weight: 600;">真正会调度 AI 的人，开始甩开别人</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button onclick="prevSlide()">← 上一页</button>
+    <button onclick="nextSlide()">下一页 →</button>
+  </div>
+
+  <!-- Slide Counter -->
+  <div class="slide-counter">1 / 6</div>
+
+  <!-- Navigation Dots -->
+  <div class="nav-dots"></div>
+
+  <!-- Tweaks Toggle -->
+  <button class="tweaks-toggle" onclick="toggleTweaks()">⚙️ Tweaks</button>
+
+  <!-- Tweaks Panel -->
+  <div class="tweaks-panel" id="tweaksPanel">
+    <h4>⚙️ Tweaks</h4>
+    <div class="tweak-item">
+      <label>深色模式</label>
+      <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+    </div>
+    <div class="tweak-item">
+      <label>字体大小</label>
+      <input type="range" id="fontSizeSlider" min="80" max="140" value="100" oninput="changeFontSize()">
+    </div>
+    <div class="tweak-item">
+      <label>主色调</label>
+      <input type="color" id="primaryColorPicker" value="#4285f4" onchange="changePrimaryColor()">
+    </div>
+  </div>
+
+  <script>
+    // Auto-fit scaling
+    function scaleStage() {
+      const stage = document.querySelector('.stage');
+      const scaleX = window.innerWidth / 1920;
+      const scaleY = window.innerHeight / 1080;
+      const scale = Math.min(scaleX, scaleY);
+      stage.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', scaleStage);
+    scaleStage();
+
+    // Slide navigation
+    let current = parseInt(localStorage.getItem('slideIndex') || '0');
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(n) {
+      current = Math.max(0, Math.min(n, slides.length - 1));
+      slides.forEach((s, i) => s.classList.toggle('active', i === current));
+      localStorage.setItem('slideIndex', current);
+      document.querySelector('.slide-counter').textContent = `${current + 1} / ${slides.length}`;
+      updateNavDots();
+    }
+
+    function nextSlide() {
+      showSlide(current + 1);
+    }
+
+    function prevSlide() {
+      showSlide(current - 1);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    // Navigation dots
+    function createNavDots() {
+      const container = document.querySelector('.nav-dots');
+      slides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = `dot ${i === 0 ? 'active' : ''}`;
+        dot.onclick = () => showSlide(i);
+        container.appendChild(dot);
+      });
+    }
+
+    function updateNavDots() {
+      const dots = document.querySelectorAll('.nav-dots .dot');
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+    }
+
+    createNavDots();
+
+    // Tweaks panel
+    function toggleTweaks() {
+      const panel = document.getElementById('tweaksPanel');
+      panel.classList.toggle('visible');
+    }
+
+    function toggleDarkMode() {
+      const isDark = document.getElementById('darkModeToggle').checked;
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    }
+
+    function changeFontSize() {
+      const scale = document.getElementById('fontSizeSlider').value / 100;
+      document.documentElement.style.fontSize = `${16 * scale}px`;
+    }
+
+    function changePrimaryColor() {
+      const color = document.getElementById('primaryColorPicker').value;
+      document.documentElement.style.setProperty('--primary', color);
+    }
+
+    // Initialize
+    showSlide(current);
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1779289301844-hjddqn76c",
+  "providerId": "opencode",
+  "title": "Execute ingest command",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779289301845,
+  "updatedAt": 1779289757955,
+  "lastResponseAt": 1779289757955,
+  "sessionId": "ses_1ba17d651ffezcfh0k0Yv5Gtb2",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "currentNote": "Clippings/Bilibili/2026-05-20-一条视频总结2026年谷歌I_O大会.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 39808,
+    "contextTokens": 46358,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 6550,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 23
+  }
+}

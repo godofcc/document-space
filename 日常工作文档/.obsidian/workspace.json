@@ -27,12 +27,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/09-archive/2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架.md",
+                "file": "wiki/concepts/多Agent协作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架"
+              "title": "多Agent协作"
+            }
+          },
+          {
+            "id": "223690a64bd285a7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           },
           {
@@ -50,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -237,13 +247,23 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "081130bc200938f7",
+  "active": "223690a64bd285a7",
   "lastOpenFiles": [
+    "wiki/concepts/多Agent协作.md",
+    "Google IO 2026 - 深度解读.html",
+    "wiki/concepts/工具污染.md",
+    "wiki/concepts/同伴交接.md",
+    "wiki/concepts/Skill.md",
+    "wiki/concepts/Sleeptime异步后台学习.md",
+    "wiki/concepts/Token 优化.md",
+    "wiki/concepts/浏览器自动化.md",
+    "wiki/concepts/静态计划.md",
+    "Clippings/Bilibili/2026-05-20-一条视频总结2026年谷歌I_O大会.md",
+    "raw/09-archive/2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架.md",
     "Clippings/Bilibili/2026-05-18-Agent记忆框架怎么选？5大Agent Memory项目工程级横向对比，哪一种才是未来Agent记忆的标准答案.md",
     "raw/09-archive/2026-05-18-Agent记忆框架怎么选？5大Agent Memory项目工程级横向对比，哪一种才是未来Agent记忆的标准答案.md",
     "wiki/concepts/主动Agent记忆.md",
     "wiki/concepts/文件即记忆.md",
-    "wiki/concepts/Sleeptime异步后台学习.md",
     "wiki/concepts/Git版本化记忆.md",
     "wiki/concepts/虚拟内存.md",
     "wiki/concepts/程序记忆.md",
@@ -256,15 +276,6 @@
     "wiki/entities/memU.md",
     "wiki/entities/ReMe.md",
     "wiki/entities/Letta.md",
-    "wiki/entities/Mem0.md",
-    "wiki/entities/Text2Mem.md",
-    "wiki/sources/摘要-agent-memory-frameworks-comparison.md",
-    "raw/09-archive/2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架.md",
-    "raw/09-archive/bilibili-multi-agent-collaboration-demo.md",
-    "Clippings/Bilibili/2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架.md",
-    "优秀Git仓库合集/优秀Git仓库文档.md",
-    "wiki/concepts/Skill.md",
-    "wiki/concepts/Token 优化.md",
     "wiki/concepts",
     "wiki/entities",
     "wiki/sources",
@@ -273,7 +284,6 @@
     "raw/02-papers",
     "raw/01-articles",
     "wiki",
-    "raw",
-    "Clippings/Bilibili"
+    "raw"
   ]
 }

@@ -5,7 +5,7 @@ tags: [AI, 架构, 协作模式]
 sources: [raw/03-transcripts/bilibili-multi-agent-collaboration-demo.md]
 last_updated: 2026-05-13
 ---
-
+h
 ## 定义
 
 多 Agent 协作是一种通过多个 AI 智能体相互配合、分工合作来完成复杂任务的系统架构模式。每个 Agent 拥有特定的角色和职责，通过协作机制实现任务的路由、交接、执行和追踪。
