@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "82cdd768a8aa1a36",
+        "id": "a19883c2efc8a8c7",
         "type": "tabs",
         "children": [
           {
-            "id": "5390989f4ade3c58",
+            "id": "5dda91c5cd70a9b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,47 +20,8 @@
               "icon": "lucide-file",
               "title": "优秀Git仓库文档"
             }
-          },
-          {
-            "id": "f7e10073a4c80cfc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/concepts/多Agent协作.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "多Agent协作"
-            }
-          },
-          {
-            "id": "223690a64bd285a7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          },
-          {
-            "id": "0b4a0c28670b32c1",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://search.bilibili.com/all?vt=72886476&from_source=webcommentline_search&keyword=screenity&seid=9306175275478551970&from_avid=115117320570757&from_comid=274597252928",
-                "title": "screenity-哔哩哔哩_bilibili",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "screenity-哔哩哔哩_bilibili"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -92,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#记忆管理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日常学习/架构设计/文生视频.md",
+                "file": "优秀Git仓库合集/优秀Git仓库文档.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "文生视频 的反向链接列表"
+              "title": "优秀Git仓库文档 的反向链接列表"
             }
           },
           {
@@ -152,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日常学习/架构设计/文生视频.md",
+                "file": "优秀Git仓库合集/优秀Git仓库文档.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "文生视频 的出链列表"
+              "title": "优秀Git仓库文档 的出链列表"
             }
           },
           {
@@ -247,35 +208,36 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "223690a64bd285a7",
+  "active": "5dda91c5cd70a9b1",
   "lastOpenFiles": [
+    "Clippings/Bilibili/2026-05-24-Harness 实践：让 Agent 全自动制作知识讲解视频.md",
+    "wiki/concepts/约束生成.md",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "日常学习/架构设计/文生视频设计学习.md",
+    "wiki/entities/tmux.md",
+    "wiki/entities/code秘密花园.md",
+    "wiki/entities/CC Switch.md",
+    "wiki/entities/MiniMax.md",
+    "wiki/sources/摘要-harness-practice-automated-video-creation.md",
+    "raw/03-transcripts/harness-practice-automated-video-creation.md",
+    "wiki/concepts/程序记忆.md",
+    "wiki/entities/Agent.md",
+    "wiki/entities/技术爬爬虾.md",
     "wiki/concepts/多Agent协作.md",
+    "wiki/concepts/浏览器自动化.md",
+    "wiki/concepts/上下文管理.md",
+    "wiki/concepts/Git版本化记忆.md",
+    "wiki/concepts/动态监督.md",
+    "优秀Git仓库合集/优秀Git仓库文档.md",
+    "2026-05-24.md",
     "Google IO 2026 - 深度解读.html",
     "wiki/concepts/工具污染.md",
     "wiki/concepts/同伴交接.md",
     "wiki/concepts/Skill.md",
     "wiki/concepts/Sleeptime异步后台学习.md",
     "wiki/concepts/Token 优化.md",
-    "wiki/concepts/浏览器自动化.md",
     "wiki/concepts/静态计划.md",
-    "Clippings/Bilibili/2026-05-20-一条视频总结2026年谷歌I_O大会.md",
-    "raw/09-archive/2026-05-14-告别一切重复枯燥任务，CLI+Skill搭建浏览器AI自动化框架.md",
-    "Clippings/Bilibili/2026-05-18-Agent记忆框架怎么选？5大Agent Memory项目工程级横向对比，哪一种才是未来Agent记忆的标准答案.md",
-    "raw/09-archive/2026-05-18-Agent记忆框架怎么选？5大Agent Memory项目工程级横向对比，哪一种才是未来Agent记忆的标准答案.md",
-    "wiki/concepts/主动Agent记忆.md",
-    "wiki/concepts/文件即记忆.md",
-    "wiki/concepts/Git版本化记忆.md",
-    "wiki/concepts/虚拟内存.md",
-    "wiki/concepts/程序记忆.md",
-    "wiki/concepts/情景记忆.md",
-    "wiki/concepts/语义记忆.md",
-    "wiki/concepts/记忆框架.md",
-    "wiki/concepts/Agent记忆.md",
-    "wiki/entities/唐国梁Tommy.md",
-    "wiki/entities/AgentScope.md",
-    "wiki/entities/memU.md",
-    "wiki/entities/ReMe.md",
-    "wiki/entities/Letta.md",
     "wiki/concepts",
     "wiki/entities",
     "wiki/sources",

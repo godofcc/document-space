@@ -1,0 +1,23 @@
+{
+  "id": "conv-1779594207410-3ct6n3f05",
+  "providerId": "opencode",
+  "title": "Explain Harness project components",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779594207411,
+  "updatedAt": 1779594264434,
+  "lastResponseAt": 1779594264434,
+  "sessionId": "ses_1a7eb58dcffecpt7YtAxG7XQPv",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 18304,
+    "contextTokens": 19121,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 817,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 9
+  }
+}

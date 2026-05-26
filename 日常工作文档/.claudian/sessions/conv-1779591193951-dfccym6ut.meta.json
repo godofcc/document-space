@@ -1,0 +1,23 @@
+{
+  "id": "conv-1779591193951-dfccym6ut",
+  "providerId": "opencode",
+  "title": "Ingest data files",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779591193952,
+  "updatedAt": 1779594502659,
+  "lastResponseAt": 1779594502659,
+  "sessionId": "ses_1a8195539ffegnt06YeA34jpLz",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 17920,
+    "contextTokens": 31708,
+    "contextWindow": 204800,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 13788,
+    "model": "opencode:zhipuai/glm-4.7",
+    "percentage": 15
+  }
+}

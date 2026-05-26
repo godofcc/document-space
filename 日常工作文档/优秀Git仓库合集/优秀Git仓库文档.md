@@ -708,6 +708,10 @@ Remotion
 
 https://remotionlab.com/tutorials/3d-shaders-cinematic-effects
 
+
+
+1、项目名称：OpenHuman – 桌面AI超级助理 GitHub链接：https://github.com/tinyhumansai/openhuman 2、项目名称：CodeGraph – 给编程Agent装上知识引擎 GitHub链接：https://github.com/colbymchenry/codegraph 3、项目名称：CloakBrowser – 隐身Chromium GitHub链接：https://github.com/CloakHQ/CloakBrowser 4、项目名称：CLI-Anything – 把任何软件变成AI可用的CLI GitHub链接：https://github.com/HKUDS/CLI-Anything 5、项目名称：LingBot-Map – 流式3D重建基础模型 GitHub链接：https://github.com/Robbyant/lingbot-map
+
   
 1、项目名称：DeepSeek-TUI – DeepSeek V4的编程 Agent GitHub 链接：https://github.com/Hmbown/DeepSeek-TUI 2、项目名称：financial-services – Anthropic 的金融行业 Agent 集合 GitHub 链接：https://github.com/anthropics/financial-services 3、项目名称：DocuSeal – 开源电子签 GitHub 链接：https://github.com/docusealco/docuseal 4、项目名称：easy-vibe – 新手 vibe coding 入门课 GitHub 链接：https://github.com/datawhalechina/easy-vibe 5、项目名称：SuperSplat – 3D Gaussian Splat 在线编辑器 GitHub 链接：https://github.com/playcanvas/supersplat
 
