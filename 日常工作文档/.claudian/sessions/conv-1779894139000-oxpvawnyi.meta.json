@@ -1,0 +1,24 @@
+{
+  "id": "conv-1779894139000-oxpvawnyi",
+  "providerId": "opencode",
+  "title": "Ingest documents into workspace",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779894139000,
+  "updatedAt": 1779982042906,
+  "lastResponseAt": 1779894514817,
+  "sessionId": "ses_1960ac22effee28MihT1pja3nM",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "currentNote": "Clippings/Bilibili/2026-05-27-AI系统设计-Sora_文生视频服务.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 45504,
+    "contextTokens": 46265,
+    "contextWindow": 202752,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 761,
+    "model": "opencode:opencode-go/glm-5.1",
+    "percentage": 23
+  }
+}

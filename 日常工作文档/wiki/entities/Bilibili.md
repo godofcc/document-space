@@ -3,7 +3,7 @@ title: "Bilibili"
 type: entity
 tags: [平台, 视频]
 sources: [raw/03-transcripts/bilibili-multi-agent-collaboration-demo.md]
-last_updated: 2026-05-13
+last_updated: 2026-05-27
 ---
 
 ## 定义
@@ -20,3 +20,4 @@ last_updated: 2026-05-13
 
 ## 关联连接
 - [[摘要-bilibili-multi-agent-collaboration-demo]] — 来源
+- [[摘要-ai系统设计-sora-文生视频服务]] — 来源

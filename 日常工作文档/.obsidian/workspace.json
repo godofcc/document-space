@@ -4,11 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "a19883c2efc8a8c7",
+        "id": "921500eefb808ec9",
         "type": "tabs",
         "children": [
           {
-            "id": "5dda91c5cd70a9b1",
+            "id": "3460d8448b424f00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/AI Agent 推理模型怎么炼成.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI Agent 推理模型怎么炼成"
+            }
+          },
+          {
+            "id": "ac5168770f473d3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/推理模型.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "推理模型"
+            }
+          },
+          {
+            "id": "43218ba1aff955b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/摘要-cli-skill-browser-automation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "摘要-cli-skill-browser-automation"
+            }
+          },
+          {
+            "id": "4bf7a7292252fc46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/摘要-ai系统设计-sora-文生视频服务.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "摘要-ai系统设计-sora-文生视频服务"
+            }
+          },
+          {
+            "id": "7b18f9a372d2ae02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/superpowers/specs/2026-05-28-babynote-agent-design.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-05-28-babynote-agent-design"
+            }
+          },
+          {
+            "id": "3434223d09ffb57b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +91,8 @@
               "title": "优秀Git仓库文档"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -156,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/Bilibili/2026-05-13-学习多 Agent 协作，我做了一个系统 demo.md",
+                "file": "wiki/sources/摘要-ai系统设计-sora-文生视频服务.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-05-13-学习多 Agent 协作，我做了一个系统 demo 的大纲"
+              "title": "摘要-ai系统设计-sora-文生视频服务 的大纲"
             }
           },
           {
@@ -208,44 +279,45 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "5dda91c5cd70a9b1",
+  "active": "3434223d09ffb57b",
   "lastOpenFiles": [
-    "Clippings/Bilibili/2026-05-24-Harness 实践：让 Agent 全自动制作知识讲解视频.md",
-    "wiki/concepts/约束生成.md",
+    "docs/superpowers/plans/2026-05-28-babynote-implementation.md",
+    "docs/superpowers/specs/2026-05-28-babynote-agent-design.md",
+    "docs/superpowers/plans",
+    "wiki/sources/摘要-ai系统设计-sora-文生视频服务.md",
+    "docs/superpowers/specs",
+    "docs/superpowers",
+    "docs",
+    "wiki/sources/摘要-ai-agent-reasoning-model.md",
+    "wiki/concepts/文生视频.md",
+    "wiki/sources/摘要-cli-skill-browser-automation.md",
+    "raw/09-archive/2026-05-27-AI系统设计-Sora_文生视频服务.md",
+    "wiki/concepts/超分辨率.md",
+    "wiki/concepts/提示词增强.md",
+    "wiki/concepts/Diffusion Transformer.md",
+    "wiki/concepts/服务降级.md",
+    "wiki/concepts/Gang Scheduling.md",
+    "wiki/concepts/DAG工作流.md",
+    "wiki/concepts/准入控制.md",
+    "wiki/sources/摘要-harness-practice-automated-video-creation.md",
+    "wiki/sources/摘要-agent-memory-frameworks-comparison.md",
+    "Clippings/Bilibili/2026-05-27-AI系统设计-Sora_文生视频服务.md",
+    "wiki/entities/s09g.md",
+    "wiki/entities/OpenAI.md",
+    "wiki/entities/Sora.md",
+    "wiki/entities/DeepSeek.md",
+    "wiki/concepts/思维链.md",
+    "wiki/concepts/AI Agent 推理模型怎么炼成.md",
+    "s09g.md",
+    "wiki/concepts/推理模型.md",
+    "raw/09-archive/2026-05-27-AI Agent 推理模型怎么炼成.md",
     "未命名 1.canvas",
     "未命名.canvas",
-    "日常学习/架构设计/文生视频设计学习.md",
-    "wiki/entities/tmux.md",
-    "wiki/entities/code秘密花园.md",
-    "wiki/entities/CC Switch.md",
-    "wiki/entities/MiniMax.md",
-    "wiki/sources/摘要-harness-practice-automated-video-creation.md",
-    "raw/03-transcripts/harness-practice-automated-video-creation.md",
-    "wiki/concepts/程序记忆.md",
-    "wiki/entities/Agent.md",
-    "wiki/entities/技术爬爬虾.md",
-    "wiki/concepts/多Agent协作.md",
-    "wiki/concepts/浏览器自动化.md",
-    "wiki/concepts/上下文管理.md",
-    "wiki/concepts/Git版本化记忆.md",
-    "wiki/concepts/动态监督.md",
-    "优秀Git仓库合集/优秀Git仓库文档.md",
-    "2026-05-24.md",
     "Google IO 2026 - 深度解读.html",
-    "wiki/concepts/工具污染.md",
-    "wiki/concepts/同伴交接.md",
-    "wiki/concepts/Skill.md",
-    "wiki/concepts/Sleeptime异步后台学习.md",
-    "wiki/concepts/Token 优化.md",
-    "wiki/concepts/静态计划.md",
     "wiki/concepts",
     "wiki/entities",
     "wiki/sources",
     "raw/09-archive",
-    "raw/03-transcripts",
-    "raw/02-papers",
-    "raw/01-articles",
-    "wiki",
-    "raw"
+    "raw/03-transcripts"
   ]
 }

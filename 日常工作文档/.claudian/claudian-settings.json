@@ -1,8 +1,8 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "haiku",
-  "thinkingBudget": "off",
+  "model": "opus",
+  "thinkingBudget": "medium",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -31,7 +31,7 @@
       "enableOpus1M": false,
       "enableSonnet1M": false,
       "customModels": "",
-      "lastModel": "haiku",
+      "lastModel": "opus",
       "environmentVariables": "",
       "environmentHash": ""
     },
@@ -59,14 +59,21 @@
       "preferredThinkingByModel": {},
       "selectedMode": "claudian-yolo",
       "visibleModels": [
-        "zhipuai/glm-4.7"
+        "opencode/big-pickle",
+        "opencode-go/mimo-v2.5-pro",
+        "opencode-go/mimo-v2.5",
+        "opencode-go/deepseek-v4-pro",
+        "opencode-go/glm-5.1",
+        "deepseek/deepseek-v4-flash",
+        "opencode-go/kimi-k2.5",
+        "opencode-go/deepseek-v4-flash"
       ]
     }
   },
   "settingsProvider": "claude",
   "savedProviderModel": {
-    "claude": "haiku",
-    "opencode": "opencode:zhipuai/glm-4.7"
+    "claude": "opus",
+    "opencode": "opencode:opencode-go/glm-5.1"
   },
   "savedProviderEffort": {
     "claude": "high",
@@ -74,7 +81,7 @@
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {
-    "claude": "off",
+    "claude": "medium",
     "opencode": "off"
   },
   "savedProviderPermissionMode": {

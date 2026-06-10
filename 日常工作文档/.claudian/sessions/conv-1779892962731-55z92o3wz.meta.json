@@ -1,0 +1,23 @@
+{
+  "id": "conv-1779892962731-55z92o3wz",
+  "providerId": "opencode",
+  "title": "Ingest documents into workspace",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779892962732,
+  "updatedAt": 1779982044324,
+  "lastResponseAt": 1779893629949,
+  "sessionId": "ses_1961cb5d0ffeNGahaHlhPbf3q6",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 48256,
+    "contextTokens": 48604,
+    "contextWindow": 202752,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 348,
+    "model": "opencode:opencode-go/glm-5.1",
+    "percentage": 24
+  }
+}

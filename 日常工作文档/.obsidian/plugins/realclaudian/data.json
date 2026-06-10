@@ -2,15 +2,10 @@
   "tabManagerState": {
     "openTabs": [
       {
-        "tabId": "tab-1779594144116-hu1rixs",
-        "conversationId": "conv-1779594207410-3ct6n3f05"
-      },
-      {
-        "draftModel": "opencode:zhipuai/glm-4.7",
-        "tabId": "tab-1779594486549-edmi0hk",
-        "conversationId": null
+        "tabId": "tab-1779982040848-1k7rrum",
+        "conversationId": "conv-1779982075027-jjbsus5a7"
       }
     ],
-    "activeTabId": "tab-1779594144116-hu1rixs"
+    "activeTabId": "tab-1779982040848-1k7rrum"
   }
 }

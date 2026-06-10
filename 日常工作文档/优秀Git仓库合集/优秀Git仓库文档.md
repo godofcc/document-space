@@ -718,7 +718,7 @@ https://remotionlab.com/tutorials/3d-shaders-cinematic-effects
 
 1、项目名称：Warp – AI 终端工具 GitHub 链接：https://github.com/warpdotdev/warp 2、项目名称：Hackingtool – 一站式黑客工具箱 GitHub 链接：https://github.com/Z4nzu/hackingtool 3、项目名称：Skills – TypeScript 顶流的 Claude Code 技能包 GitHub 链接：https://github.com/mattpocock/skills 4、项目名称：awesome-codex-skills – Codex 技能生态精选 GitHub 链接：https://github.com/ComposioHQ/awesome-codex-skills 5、项目名称：Pixelle-Video – AI 全自动短视频 GitHub 链接：https://github.com/AIDC-AI/Pixelle-Video
   
-
+1、项目名称：EverOS – AI Agent记忆操作系统 GitHub链接：https://github.com/EverMind-AI/EverOS 2、项目名称：DeepSeek-Reasonix – DeepSeek原生终端编程代理 GitHub链接：https://github.com/esengine/DeepSeek-Reasonix 3、项目名称：HyperFrames – 写HTML出视频 GitHub链接：https://github.com/heygen-com/hyperframes 4、项目名称：Understand-Anything – 代码仓库知识图谱 GitHub链接：https://github.com/Lum1104/Understand-Anything 5、项目名称：academic-research-skills - 完整的学术研究Skill包 GitHub链接：https://github.com/Imbad0202/academic-research-skills
   
 
 当一堆请求来到 vLLM 服务器上时，按照 First-Come-First-Serve（FCFS）原则，优先处理那些最早到来的请求。

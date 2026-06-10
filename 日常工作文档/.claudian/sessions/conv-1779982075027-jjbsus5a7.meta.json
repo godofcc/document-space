@@ -1,0 +1,23 @@
+{
+  "id": "conv-1779982075027-jjbsus5a7",
+  "providerId": "opencode",
+  "title": "Brainstorm agent ideas",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779982075027,
+  "updatedAt": 1779984035945,
+  "lastResponseAt": 1779984035945,
+  "sessionId": "ses_190ccf30affesDH0VK5MGobT4W",
+  "providerState": {
+    "databasePath": "/Users/chengchengwwc/.local/share/opencode/opencode.db"
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 10272,
+    "contextTokens": 59503,
+    "contextWindow": 202752,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 49231,
+    "model": "opencode:opencode-go/glm-5.1",
+    "percentage": 29
+  }
+}
